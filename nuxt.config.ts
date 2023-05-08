@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   srcDir: 'src',
-  secret: process.env.AUTH_SECRET,
+  secret: process.env.GOOGLE_SECRET,
   auth: {
     origin: process.env.AUTH_ORIGIN
   },
