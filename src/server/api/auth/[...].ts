@@ -4,6 +4,8 @@ import GoogleProvider from 'next-auth/providers/google'
 import { NuxtAuthHandler } from '#auth'
 
 export default NuxtAuthHandler({
+  // @ts-expect-error
+  site: process.env.NEXTAUTH_URL,
   // TODO: SET A STRONG SECRET, SEE https://sidebase.io/nuxt-auth/configuration/nuxt-auth-handler#secret
   secret: process.env.AUTH_SECRET,
   // TODO: ADD YOUR OWN AUTHENTICATION PROVIDER HERE, READ THE DOCS FOR MORE: https://sidebase.io/nuxt-auth
