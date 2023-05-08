@@ -14,8 +14,8 @@ export default NuxtAuthHandler({
     //   clientSecret: process.env.GITHUB_CLIENT_SECRET || 'enter-your-client-secret-here' // TODO: Replace this with an env var like "process.env.GITHUB_CLIENT_SECRET". The secret should never end up in your github repository
     // }),
     GoogleProvider.default({
-      clientId: process.env.GOOGLE_ID as string,
-      clientSecret: process.env.GOOGLE_SECRET as string
+      clientId: process.env.NEXTAUTH_ID as string,
+      clientSecret: process.env.NEXTAUTH_SECRET as string
     }),
     // @ts-expect-error You need to use .default here for it to work during SSR. May be fixed via Vite at some point
     CredentialsProvider.default({
